@@ -9,6 +9,7 @@
 body {
    background-color: #dad7d7;
    font-family: "Montserrat", serif;
+   width: 100vh;
 }
 
 nav {
@@ -25,15 +26,12 @@ nav {
 
 .nav ul {
    display: flex;
-   padding: 10px;
    margin-right: 20px;
 }
 
 .nav ul li {
-   padding: 10px;
-   align-content: center;
-   margin: 10px; 
-   position: relative;
+   padding: 0px 20px;
+   align-content: center; 
 }
 
 ul.nav-list li:hover a{
@@ -45,9 +43,11 @@ li a{
    text-transform: uppercase;
 }
 
-.Inicio a {
-   color: black;
+li.Inicio {
    font-weight: bolder;
-   border-bottom: 1px solid black;
+   border-bottom: 2px solid black;
 }
 
+.Inicio a {
+   color: black;
+}

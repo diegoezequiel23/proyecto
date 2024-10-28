@@ -1,52 +1,53 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box; 
- }
- 
- body {
-    background-color: #dad7d7;
-    font-family: "Montserrat", serif;
- }
- 
- nav {
-    background-color: rgb(255, 255, 255);
-    height: 80px;
-    width: 100%;
-    display: flex;
- }
- 
- .logo {
-    max-height: 80px;
-    padding: 0 100px;
- }
- 
- .nav ul {
-    display: flex;
-    padding: 10px;
-    margin-right: 20px;
- }
- 
- .nav ul li {
-    padding: 10px;
-    align-content: center;
-    margin: 10px; 
-    position: relative;
- }
- 
- ul.nav-list li:hover a{
-    color: black;
- }
- 
- li a{
-    color: rgb(93, 93, 93);
-    text-transform: uppercase;
- }
- 
- .Contacto a {
-    color: black;
-    font-weight: bolder;
-    border-bottom: 1px solid black;
- }
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box; 
+}
+
+body {
+   background-color: #dad7d7;
+   font-family: "Montserrat", serif;
+   width: 100vh;
+}
+
+nav {
+   background-color: rgb(255, 255, 255);
+   height: 80px;
+   width: 100%;
+   display: flex;
+}
+
+.logo {
+   max-height: 80px;
+   padding: 0 100px;
+}
+
+.nav ul {
+   display: flex;
+   margin-right: 20px;
+}
+
+.nav ul li {
+   padding: 0px 20px;
+   align-content: center; 
+}
+
+ul.nav-list li:hover a{
+   color: black;
+}
+
+li a{
+   color: rgb(93, 93, 93);
+   text-transform: uppercase;
+}
+
+li.Contacto {
+   font-weight: bolder;
+   border-bottom: 2px solid black;
+}
+
+.Contacto a {
+   color: black;
+}

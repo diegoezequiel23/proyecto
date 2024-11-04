@@ -53,6 +53,10 @@ li.Inicio {
    border-bottom: 2px solid black;
 }
 
+li.Inicio a {
+   color: black;
+}
+
 .Inicio a {
    color: black;
 } 
@@ -141,23 +145,54 @@ button:hover {
 }
 
 footer {
-   background-color: black;
-   color: #fff;
+   background-color: #302951;
+   padding: 40px 15px 0;
+   color: #fff
+}
+
+footer p {
+   margin: 0 0 2rem;
+   font-size: 1rem;
+
 }
 
 footer h2, footer div a{
    color: #fff;
 }
 
-
-footer div {
-   border-bottom: 1px solid rgb(175, 175, 181);
-   display: flex;
-   
+.top-footer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-.span-footer{
-   padding: 50px;
+.lista-footer-ul {
+   display: grid;
+   column-gap: 3rem;
+   row-gap: .5rem;
+   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+}
+
+.lista-footer h2 {
+   text-align: center;
+   padding: 0 15px 15px;
+   font-size: 1.5rem;
+}
+
+.top-footer-aboutme {
+   margin: 50px;
+}
+
+span {
    display: block;
    text-align: center;
+   padding: 2rem;
+}
+
+.bottom-footer {
+   border-top: 1px solid rgb(66, 63, 63);
+}
+
+.lista-footer-ul li {
+   display: flex;
+   justify-content: center;
 }

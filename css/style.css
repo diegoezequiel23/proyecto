@@ -29,7 +29,7 @@ nav {
    background-color: #fff;
    
 }
- .nav ul {
+.nav ul {
    display: flex;
    margin-right: 1.25rem;
 }
@@ -99,7 +99,7 @@ li.Inicio a {
 
 .cards{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    margin-top: 50px;
    flex-wrap: wrap;
    margin-bottom: 50px;
@@ -182,7 +182,7 @@ footer h2, footer div a{
    margin: 50px;
 }
 
-span {
+footer span {
    display: block;
    text-align: center;
    padding: 2rem;
@@ -195,4 +195,12 @@ span {
 .lista-footer-ul li {
    display: flex;
    justify-content: center;
+}
+
+.titulo-h2 {
+   color: rgb(52, 52, 52);
+   text-align: center;
+   background-color: #dbe7ec;
+   padding: 2rem;
+   
 }

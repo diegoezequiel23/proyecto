@@ -81,11 +81,11 @@ img {
 
 .cards {
    display: grid;
-   grid-template-columns: 20% 20% 20%;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
    justify-content: center;
    gap: 2rem;
-   margin-bottom: 3rem;
    flex-wrap: wrap;
+   margin: 0 100px 100px 100px;
 }
 
 .cards-1, .cards-2, .cards-3, .cards p {

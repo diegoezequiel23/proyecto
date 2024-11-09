@@ -7,30 +7,36 @@
 }
 
 body {
-   background-color: #dad7d7;
+   background-color: #e4e1e1;
    font-family: "Montserrat", serif;
-   width: 100vh;
+   width: 100dvw;
+   height: 100dvh;
+   margin-bottom: 40px;
 }
 
 nav {
    background-color: rgb(255, 255, 255);
-   height: 80px;
+   height: 3.125rem;
    width: 100%;
    display: flex;
+   border-top: 1px solid #dad7d7;
+   justify-content: center;
 }
 
-.logo {
-   max-height: 80px;
-   padding: 0 100px;
-}
-
-.nav ul {
+.container  {
    display: flex;
-   margin-right: 20px;
+   justify-content: center;
+   height: 6.25rem;
+   background-color: #fff;
+   
+}
+ .nav ul {
+   display: flex;
+   margin-right: 1.25rem;
 }
 
 .nav ul li {
-   padding: 0px 20px;
+   padding: 0px 1.25rem;
    align-content: center; 
 }
 
@@ -38,7 +44,7 @@ ul.nav-list li:hover a{
    color: black;
 }
 
-li a{
+.nav li a{
    color: rgb(93, 93, 93);
    text-transform: uppercase;
 }
@@ -48,6 +54,80 @@ li.Contacto {
    border-bottom: 2px solid black;
 }
 
+li.Contacto a {
+   color: black;
+}
+
 .Contacto a {
    color: black;
+} 
+
+h1 {
+   text-align: center;
+   padding: 2rem;
+}
+
+#formulario{
+   
+}
+
+footer {
+   background-color: #302951;
+   padding: 40px 15px 0;
+   color: #fff;
+   bottom: 0;
+}
+
+footer p {
+   margin: 0 0 2rem;
+   font-size: 1rem;
+
+}
+
+footer h2, footer div a{
+   color: #fff;
+}
+
+.top-footer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.lista-footer-ul {
+   display: grid;
+   column-gap: 3rem;
+   row-gap: .5rem;
+   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+}
+
+.lista-footer h2 {
+   text-align: center;
+   padding: 0 15px 15px;
+   font-size: 1.5rem;
+}
+
+.top-footer-aboutme {
+   margin: 50px;
+}
+
+footer span {
+   display: block;
+   text-align: center;
+   padding: 2rem;
+}
+
+.bottom-footer {
+   border-top: 1px solid rgb(66, 63, 63);
+}
+
+.lista-footer-ul li {
+   display: flex;
+   justify-content: center;
+}
+
+.titulo-h2 {
+   color: rgb(52, 52, 52);
+   text-align: center;
+   background-color: #dbe7ec;
+   padding: 2rem;
 }

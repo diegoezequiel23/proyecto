@@ -9,7 +9,6 @@
 body {
    background-color: #e4e1e1;
    font-family: "Montserrat", serif;
-   width: 100dvw;
    height: 100dvh;
    margin-bottom: 40px;
 }
@@ -78,7 +77,9 @@ img {
    border-radius: 50%;
    padding-top: 20px;
 }
-
+main {
+   height: 100vh;
+}
 .cards {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -93,6 +94,7 @@ img {
    background-color: #fff;
    padding: 20px;
    border-radius: 2%;
+
 }
 
 .cards-1:hover, .cards-2:hover, .cards-3:hover {

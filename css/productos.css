@@ -187,3 +187,24 @@ footer span {
    background-color: #dbe7ec;
    padding: 2rem;
 }
+
+@media only screen and (max-width: 768px) {
+
+
+   .nav ul li {
+      padding: 1rem;
+   }
+   .nav li a {
+      font-size: 10px;
+   }
+   .section-nav {
+      font-size: 0.8rem;
+   }
+   
+   .section-nav span {
+      display: none;
+   }
+   .lista-footer-ul {
+      margin-bottom: 1rem;
+   }
+}

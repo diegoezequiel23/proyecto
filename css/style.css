@@ -31,12 +31,12 @@ nav {
 .nav ul {
    display: flex;
    margin-right: 1.25rem;
-   flex-wrap: wrap;
+
 }
 
 .nav ul li {
    padding: 0px 1.25rem;
-   align-content: center; 
+   align-content: center;
 }
 
 ul.nav-list li:hover a{
@@ -206,3 +206,24 @@ footer span {
    padding: 2rem;
    
 }
+
+@media only screen and (max-width: 768px) {
+ 
+   .section-principal{
+      font-size: 1.5rem;
+      padding: 15dvh
+   }
+
+   .nav ul li {
+      padding: 1rem;
+   }
+   .nav li a {
+      font-size: 10px;
+   }
+
+   .lista-footer-ul {
+      margin-bottom: 1rem;
+   }
+
+}
+

@@ -80,7 +80,6 @@ h1 {
    width: 100%;
    max-width: 400px;
    border-radius: 1.5rem;
-   backdrop-filter: blur(10px);
    border: solid 2px transparent;
    background-clip: padding-box;
    box-shadow: 10px 10px 10px #2e364408;
@@ -198,4 +197,19 @@ footer span {
    text-align: center;
    background-color: #dbe7ec;
    padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+   .nav ul li {
+      padding: 1rem;
+   }
+   .nav li a {
+      font-size: 10px;
+   }
+   
+   .lista-footer-ul {
+      margin-bottom: 1rem;
+   }
 }

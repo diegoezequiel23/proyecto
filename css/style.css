@@ -97,6 +97,7 @@ li.Inicio a {
    display: flex;
    align-items: center;
    flex-direction: column;
+   justify-content: center;
 }
 
 .cards{
@@ -164,7 +165,7 @@ footer h2, footer div a{
 
 .top-footer {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .lista-footer-ul {
@@ -211,14 +212,14 @@ footer span {
  
    .section-principal{
       font-size: 1.5rem;
-      padding: 15dvh
+      padding: 15dvh 5dvw;
    }
 
    .nav ul li {
       padding: 1rem;
    }
    .nav li a {
-      font-size: 10px;
+      font-size: 1rem;
    }
 
    .lista-footer-ul {
@@ -227,3 +228,44 @@ footer span {
 
 }
 
+@media only screen and (max-width: 1400px) {
+   .lista-footer-ul {
+      grid-template-columns: auto auto;
+   }
+}
+
+@media only screen and (max-width: 675px) {
+   .section-nav {
+      grid-template-columns: none;
+      gap: 2rem
+      }
+   
+   nav {
+      height: 100%;
+      display: block;
+   }
+
+   .nav ul {
+      display: block;
+      margin: 0;
+   }
+
+   li.Inicio {
+      border: 0;
+      background-color: #f5f3f3;
+   }
+
+   .nav ul li {
+      padding: 1rem;
+      border-bottom: 1px solid #dad7d7;
+      text-align: center;
+   }
+   .nav ul li a {
+      font-size: 1rem;
+   }
+
+   .lista-footer-ul {
+      grid-template-columns: auto auto;
+   }
+
+}

@@ -124,7 +124,7 @@ footer h2, footer div a{
 
 .top-footer {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .lista-footer-ul {
@@ -166,17 +166,57 @@ footer span {
    padding: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
+
+   .lista-footer-ul {
+      display: grid;
+      column-gap: 3rem;
+      row-gap: .5rem;
+      grid-template-columns: auto auto;
+      margin-bottom: 1rem;
+   }
+
 
 
    .nav ul li {
       padding: 1rem;
    }
    .nav li a {
-      font-size: 10px;
+      font-size: 1rem;
    }
    
+}
+
+@media only screen and (max-width: 1400px) {
+   
+}
+
+@media only screen and (max-width: 500px) {
+   nav {
+      height: 100%;
+      display: block;
+   }
+
+   .nav ul {
+      display: block;
+      margin: 0;
+   }
+
+   li.Reseñas {
+      border: 0;
+      background-color: #f5f3f3;
+   }
+
+   .nav ul li {
+      padding: 1rem;
+      border-bottom: 1px solid #dad7d7;
+      text-align: center;
+   }
+   .nav ul li a {
+      font-size: 1rem;
+   }
+
    .lista-footer-ul {
-      margin-bottom: 1rem;
+      grid-template-columns: auto auto;
    }
 }

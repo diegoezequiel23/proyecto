@@ -137,7 +137,7 @@ footer h2, footer div a{
 
 .top-footer {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .lista-footer-ul {
@@ -181,6 +181,10 @@ footer span {
 }
 
 @media only screen and (max-width: 768px) {
+
+   .lista-footer-ul {
+      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr) );
+   }
  
    .section-principal{
       font-size: 2rem;
@@ -193,7 +197,11 @@ footer span {
       padding: 1rem;
    }
    .nav li a {
-      font-size: 10px;
+      font-size: 1rem;
+   }
+
+   .lista-footer-ul {
+      margin-bottom: 1rem;
    }
 
    .lista-footer-ul {
@@ -205,5 +213,52 @@ footer span {
    .seccion p {
       font-size: 1.5rem;
       padding: 1rem;
+   }
+}
+
+@media only screen and (max-width: 1400px) {
+   .lista-footer-ul {
+      grid-template-columns: auto auto;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+
+   .section-principal {
+      padding: 15dvh 5dvw;
+      background-size: 100vh 100dvw;
+   }
+
+   .section-nav {
+      grid-template-columns: none;
+      gap: 2rem
+      }
+   
+   nav {
+      height: 100%;
+      display: block;
+   }
+
+   .nav ul {
+      display: block;
+      margin: 0;
+   }
+
+   li.Nosotros {
+      border: 0;
+      background-color: #f5f3f3;
+   }
+
+   .nav ul li {
+      padding: 1rem;
+      border-bottom: 1px solid #dad7d7;
+      text-align: center;
+   }
+   .nav ul li a {
+      font-size: 1rem;
+   }
+
+   .lista-footer-ul {
+      grid-template-columns: auto auto;
    }
 }

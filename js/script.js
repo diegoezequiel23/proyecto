@@ -2,7 +2,7 @@ let productos = [];
 
 const cargarProductos = async () => {
   try {
-    const response = await fetch("./productos.json");
+    const response = await fetch("./js/productos.json");
     productos = await response.json();
 
     mostrarProductos();
@@ -14,17 +14,15 @@ const cargarProductos = async () => {
 const mostrarProductos = () => {
   const listadoProductos = document.querySelector("#listado-productos");
 
-  listadoProductos.innerHTML = "<h2>Productos</h2>";
-
 
   productos.forEach((producto) => {
 
 
     const html = `
         <article data-id="${producto.id}">
-                 <img src="${producto.image}" alt="${producto.alt}">
+                 <div><img src="${producto.image}" alt="${producto.alt}"></div>
                  <p>${producto.name}</p>
-                 <p>${producto.price}</p>
+                 <p>$${producto.price}</p>
                 <button type="button" class="add">${producto.boton}</button>
             </article>
     `;

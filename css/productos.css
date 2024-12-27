@@ -7,7 +7,7 @@
 }
 
 body {
-   background-color: #ffffff;
+   background-color: #f3f4f6;
    font-family: "Montserrat", serif;
    height: 100dvh;
 }
@@ -91,11 +91,33 @@ li.Productos a {
    padding: 3rem;
    gap: 2rem;
 }
+
+.cards article {
+   background-color: white;
+}
+
+.cards article:hover {
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cards article:hover img {
+   transform: scale(1.03);
+}
+
 .cards img {
-   width: 200px;
    height: 300px;
-   object-fit: contain;
-   margin: 1rem 50px;
+   border-radius: 5%;
+}
+
+.cards article div {
+   display: grid;
+   place-items: center;
+}
+.nav ul span {
+   display: flex;
+}
+.cards div {
+   width: 200px;
 }
 
 .cards article {
@@ -115,14 +137,15 @@ li.Productos a {
    text-transform: uppercase;
    padding: 2px 0;
    color:  rgb(82, 81, 81);
+   text-align: center;
 }
 
 button {
    padding: 10px 25px;
-   margin-top: 0.5rem;
    color: #fff;
    background-color: rgb(53, 152, 209);
    border: none;
+   width: 100%;
 }
 
 button:hover {

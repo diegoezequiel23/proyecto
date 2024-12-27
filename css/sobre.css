@@ -79,6 +79,9 @@ li.Nosotros a {
    text-transform: uppercase;
 }
 
+.nav ul span {
+   display: flex;
+}
 
 .seccion h1 {
    color: #2e2d30 ;

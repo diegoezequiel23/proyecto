@@ -85,6 +85,11 @@ h1 {
    box-shadow: 10px 10px 10px #2e364408;
 }
 
+#error-nombre, #error-email, #error-mensaje{
+   color: red;
+   font-size: .8rem;
+}
+
 label {
    display: block;
    margin-bottom: .5rem;
@@ -93,6 +98,9 @@ label {
    letter-spacing: .5px;
    margin-top: .5rem;
    color: rgb(69, 69, 69);
+}
+.nav ul span {
+   display: flex;
 }
 
 input, textarea, button {

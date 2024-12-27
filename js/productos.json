@@ -1,8 +1,8 @@
 [
     {
         "id":1,
-        "name": "nombre",
-        "price": 10000,
+        "name": "modelo 1245",
+        "price": 500,
         "description": "",
         "image": "./images/reloj1.jpg",
         "alt": "reloj-en-venta",
@@ -11,8 +11,8 @@
 
     {
         "id":2,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 1267",
+        "price": 300,
         "description": "",
         "image": "./images/reloj2.jpg",
         "alt": "reloj-en-venta",
@@ -21,8 +21,8 @@
 
     {
         "id":3,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 3450",
+        "price": 150,
         "description": "",
         "image": "./images/reloj3.jpg",
         "alt": "reloj-en-venta",
@@ -31,8 +31,8 @@
 
     {
         "id":4,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 3214",
+        "price": 200,
         "description": "",
         "image": "./images/reloj5.webp",
         "alt": "reloj-en-venta",
@@ -40,8 +40,8 @@
     },
     {
         "id":5,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 1333",
+        "price": 250,
         "description": "",
         "image": "./images/reloj6.webp",
         "alt": "reloj-en-venta",
@@ -50,8 +50,8 @@
 
     {
         "id":6,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 3245",
+        "price": 800,
         "description": "",
         "image": "./images/reloj7.webp",
         "alt": "reloj-en-venta",
@@ -60,8 +60,8 @@
 
     {
         "id":7,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 4331",
+        "price": 3500,
         "description": "",
         "image": "./images/reloj8.webp",
         "alt": "reloj-en-venta",
@@ -70,8 +70,8 @@
 
     {
         "id":8,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 98",
+        "price": 400,
         "description": "",
         "image": "./images/reloj9.webp",
         "alt": "reloj-en-venta",
@@ -80,8 +80,8 @@
 
     {
         "id":9,
-        "name": "",
-        "price": 10000,
+        "name": "model 2002",
+        "price": 100,
         "description": "",
         "image": "./images/reloj10.webp",
         "alt": "reloj-en-venta",
@@ -90,8 +90,8 @@
 
    {
         "id":10,
-        "name": "",
-        "price": 10000,
+        "name": "modelo 86",
+        "price": 1000,
         "description": "",
         "image": "./images/reloj11.webp",
         "alt": "reloj-en-venta",
@@ -99,8 +99,8 @@
    },
    {
         "id":11,
-        "name": "",
-        "price": 10000,
+        "name": "model gold",
+        "price": 1500,
         "description": "",
         "image": "./images/reloj12.webp",
         "alt": "reloj-en-venta",
@@ -108,8 +108,8 @@
    },
    {
         "id":12,
-        "name": "",
-        "price": 10000,
+        "name": "model plate",
+        "price": 800,
         "description": "",
         "image": "./images/reloj13.webp",
         "alt": "reloj-en-venta",
@@ -117,8 +117,8 @@
    },
    {
         "id":13,
-        "name": "",
-        "price": 10000,
+        "name": "modelo black",
+        "price": 900,
         "description": "",
         "image": "./images/reloj14.webp",
         "alt": "reloj-en-venta",
@@ -126,7 +126,7 @@
    },
    {
         "id":14,
-        "name": "",
+        "name": "model fdex",
         "price": 10000,
         "description": "",
         "image": "./images/reloj15.webp",
@@ -135,8 +135,8 @@
    },
    {
         "id":15,
-        "name": "",
-        "price": 10000,
+        "name": "watch 200",
+        "price": 200,
         "description": "",
         "image": "./images/reloj16.webp",
         "alt": "reloj-en-venta",
@@ -144,8 +144,8 @@
    },
    {
         "id":16,
-        "name": "",
-        "price": 10000,
+        "name": "watch 350",
+        "price": 150,
         "description": "",
         "image": "./images/reloj4.jpg",
         "alt": "reloj-en-venta",

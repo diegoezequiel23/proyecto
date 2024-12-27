@@ -7,7 +7,7 @@
 }
 
 body {
-   background-color: #e4e1e1;
+   background-color: #f3f4f6;
    font-family: "Montserrat", serif;
    height: 100dvh;
 }
@@ -117,7 +117,9 @@ footer p {
    font-size: 1rem;
 
 }
-
+.nav ul span {
+   display: flex;
+}
 footer h2, footer div a{
    color: #fff;
 }

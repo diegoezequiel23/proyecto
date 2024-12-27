@@ -2,7 +2,7 @@ let productos = [];
 
 const cargarProductos = async () => {
   try {
-    const response = await fetch("./js/productos.json");
+    const response = await fetch("./productos.json");
     productos = await response.json();
 
     mostrarProductos();
@@ -51,7 +51,6 @@ document.addEventListener("click", (event) => {
   
 
         const { name, price } = elemento;
-  
 
         const producto = {
           id: id,

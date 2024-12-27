@@ -1,5 +1,7 @@
 let productos = [];
 
+const cantidadCarrito = document.getElementById("contador");
+
 const cargarProductos = async () => {
   try {
     const response = await fetch("./js/productos.json");
@@ -65,5 +67,8 @@ document.addEventListener("click", (event) => {
       }
   
       localStorage.setItem("carrito", JSON.stringify(carrito));
+   
     }
   })
+
+   carritoContador();

@@ -1,0 +1,154 @@
+[
+    {
+        "id":1,
+        "name": "nombre",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj1.jpg",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":2,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj2.jpg",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":3,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj3.jpg",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":4,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj5.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+    {
+        "id":5,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj6.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":6,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj7.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":7,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj8.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":8,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj9.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+    {
+        "id":9,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj10.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+    },
+
+   {
+        "id":10,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj11.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":11,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj12.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":12,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj13.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":13,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj14.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":14,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj15.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":15,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj16.webp",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   },
+   {
+        "id":16,
+        "name": "",
+        "price": 10000,
+        "description": "",
+        "image": "./images/reloj4.jpg",
+        "alt": "reloj-en-venta",
+        "boton": "Añadir al carrito"
+   }
+]

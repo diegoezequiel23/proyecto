@@ -12,6 +12,13 @@ body {
    height: 100dvh;
 }
 
+.roboto-regular {
+   font-family: "Roboto", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+
 nav {
    background-color: rgb(255, 255, 255);
    height: 3.125rem;
@@ -37,6 +44,10 @@ nav {
 .nav ul li {
    padding: 0px 1.25rem;
    align-content: center;
+}
+
+.nav ul span {
+   display: flex;
 }
 
 ul.nav-list li:hover a{
@@ -101,11 +112,10 @@ li.Inicio a {
 }
 
 .cards{
-   display: flex;
-   justify-content: space-evenly;
-   margin-top: 50px;
-   flex-wrap: wrap;
-   margin-bottom: 50px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   padding: 3rem;
+   gap: 2rem;
 }
 
 .cards img {
@@ -148,41 +158,40 @@ button:hover {
 }
 
 footer {
-   background-color: #302951;
-   padding: 40px 15px 0;
+   background-color: #4f8993;
    color: #fff
 }
 
-footer p {
-   margin: 0 0 2rem;
-   font-size: 1rem;
-
-}
 
 footer h2, footer div a{
    color: #fff;
 }
 
-.top-footer {
+footer .top-footer {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
+   gap: 50px;
+   padding: 30px;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
 }
 
-.lista-footer-ul {
-   display: grid;
-   column-gap: 3rem;
-   row-gap: .5rem;
-   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+.box-1 a img {
+   height: 6.25rem;
+   filter: invert();
 }
 
-.lista-footer h2 {
-   text-align: center;
-   padding: 0 15px 15px;
+.box-2 p {
+   padding: .1rem;
+}
+
+.box-3 a {
+   display: inline-block;
+   width: 45px;
+   height: 45px;
+   margin-top: 15px;
    font-size: 1.5rem;
-}
-
-.top-footer-aboutme {
-   margin: 50px;
 }
 
 footer span {
@@ -195,18 +204,18 @@ footer span {
    border-top: 1px solid rgb(66, 63, 63);
 }
 
-.lista-footer-ul li {
-   display: flex;
-   justify-content: center;
-}
 
 .titulo-h2 {
    color: rgb(52, 52, 52);
    text-align: center;
-   background-color: #dbe7ec;
    padding: 2rem;
-   
+      font-family: "Roboto", serif;
+      font-weight: 600;
+      font-size: 30px;
+      font-style: italic;
 }
+
+
 
 @media only screen and (max-width: 768px) {
  
@@ -222,17 +231,12 @@ footer span {
       font-size: 1rem;
    }
 
-   .lista-footer-ul {
-      margin-bottom: 1rem;
+   .cards {
+      grid-template-columns: repeat(2, 1fr);
    }
 
 }
 
-@media only screen and (max-width: 1400px) {
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
-   }
-}
 
 @media only screen and (max-width: 675px) {
    .section-nav {
@@ -264,8 +268,10 @@ footer span {
       font-size: 1rem;
    }
 
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
-   }
+}
 
+@media only screen and (max-width: 551px) {
+   .cards {
+       grid-template-columns: repeat(1, 1fr);
+   }
 }

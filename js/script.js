@@ -1,6 +1,14 @@
-let productos = [];
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburguesa = document.getElementById('hamburguesa');
+  const nav = document.getElementById('nav');
 
-const cantidadCarrito = document.getElementById("contador");
+  hamburguesa.addEventListener('click', () => {
+      nav.classList.toggle('open');
+  });
+});
+
+
+let productos = [];
 
 const cargarProductos = async () => {
   try {
@@ -50,13 +58,14 @@ document.addEventListener("click", (event) => {
         console.log(elemento);
   
 
-        const { name, price } = elemento;
+        const { name, price, image } = elemento;
 
         const producto = {
           id: id,
           nombre: name,
           precio: price,
           cantidad: 1,
+          imagen: image
         };
   
   
@@ -67,8 +76,11 @@ document.addEventListener("click", (event) => {
       }
   
       localStorage.setItem("carrito", JSON.stringify(carrito));
-   
+      actualizarContadorCarrito();
     }
   })
 
-   carritoContador();
+  const actualizarContadorCarrito = () => { const contador = document.querySelector("#contador"); contador.textContent = carrito.reduce((acc, item) => acc + item.cantidad, 0); };
+  
+  document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
+

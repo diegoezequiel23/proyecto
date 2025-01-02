@@ -23,21 +23,23 @@
         <a class="container" href="index.html">
             <img class="logo" src="images/shop.png" alt="logo de la tienda">
             </a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="Inicio"><a href="index.html">Inicio</a></li>
-                <li class="Productos"><a href="productos.html">Productos</a></li>
-                <li class="Reseñas"><a href="reseñas.html">Reseñas</a></li>
-                <li class="Nosotros"><a href="sobre.html">Sobre Nosotros</a></li>
-                <li class="Contacto"><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrito.html"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></a></li>
-            </ul>
-        </nav>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li class="Inicio"><a href="index.html">Inicio</a></li>
+                    <li class="Productos"><a href="productos.html">Productos</a></li>
+                    <li class="Reseñas"><a href="reseñas.html">Reseñas</a></li>
+                    <li class="Nosotros"><a href="sobre.html">Sobre Nosotros</a></li>
+                    <li class="Contacto"><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                        <li class="contador"> <span id="contador">0</span> </li>
+                    </ul>
+                    <div class="hamburguesa" id="hamburguesa">
+                        <span class="material-symbols-outlined">menu</span>
+                    </div>   
+            </nav>
     </header>
     <main>
-        <h2>Comentarios de nuestros clientes</h2>
+        <h2 class="clientes-titulo">Comentarios de nuestros clientes</h2>
         <section class="cards">
             <article class="cards-1">
                 <img src="https://png.pngtree.com/png-vector/20240412/ourlarge/pngtree-a-woman-in-grey-suit-stands-front-png-image_12281415.png" alt="">
@@ -73,51 +75,35 @@
     </main>
     <footer>
         <div class="top-footer">
-            <div class="top-footer-aboutme">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae minima, a reiciendis deleniti perferendis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae enim porro, nemo ullam necessitatibus doloribus ut reiciendis fugiat, aliquam soluta non, ab vel nam hic. Totam laudantium culpa aut necessitatibus?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla in nam deserunt, sed eaque.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, nam.</p>
+            <div class="box-1">
+            <a href="index.html">
+                <img src="images/shop.png" alt="logo de la tienda">
+            </a>
             </div>
-            <div class="lista-footer">
-                <h2>Guia XXXX</h2>
-                <ul class="lista-footer-ul">
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                    <li><a href="#">Lista</a></li>
-                </ul>
+            <div class="box-2">
+                <h2>Sobre nosotros</h2>
+                <p>Direccion: J. Hernandez 445</p>
+                <p>Correo: timeshop.prueba@correo.com</p>
+                <p>Whatsapp de la empresa: 1123456789</p>
+               
+            </div>
+            <div class="box-3">
+                <h2>Redes</h2>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.whatsapp.com">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="bottom-footer">
             <span>Todos los derechos reservados. 2024</span>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

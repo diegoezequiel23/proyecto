@@ -10,6 +10,23 @@ body {
    background-color: #ffffff;
    font-family: "Montserrat", serif;
    height: 100dvh;
+   overflow-x: hidden;
+}
+
+.roboto-regular {
+   font-family: "Roboto", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.hamburguesa {
+   display: none;
+   cursor: pointer;
+   z-index: 1000; 
+}
+
+.material-symbols-outlined {
+   transition: 0.3s;
 }
 
 nav {
@@ -19,6 +36,8 @@ nav {
    display: flex;
    border-top: 1px solid #dad7d7;
    justify-content: center;
+   z-index: 1000;
+   position: relative;
 }
 
 .container  {
@@ -60,6 +79,20 @@ li.Nosotros a {
 .Nosotros a {
    color: black;
 } 
+
+.nav ul .contador {
+   padding: 0;
+}
+
+#contador {
+   border-radius: 50%;
+   font-family: 'Roboto';
+   font-size: small;
+}
+
+.nav ul li:nth-child(6) {
+   padding-right: 0;
+}
 
 .section-principal{
    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url("../images/rolex.png");
@@ -123,41 +156,40 @@ button:hover {
 }
 
 footer {
-   background-color: #302951;
-   padding: 40px 15px 0;
+   background-color: #4f8993;
    color: #fff
 }
 
-footer p {
-   margin: 0 0 2rem;
-   font-size: 1rem;
-
-}
 
 footer h2, footer div a{
    color: #fff;
 }
 
-.top-footer {
+footer .top-footer {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
+   gap: 50px;
+   padding: 30px;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
 }
 
-.lista-footer-ul {
-   display: grid;
-   column-gap: 3rem;
-   row-gap: .5rem;
-   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+.box-1 a img {
+   height: 6.25rem;
+   filter: invert();
 }
 
-.lista-footer h2 {
-   text-align: center;
-   padding: 0 15px 15px;
+.box-2 p {
+   padding: .1rem;
+}
+
+.box-3 a {
+   display: inline-block;
+   width: 45px;
+   height: 45px;
+   margin-top: 15px;
    font-size: 1.5rem;
-}
-
-.top-footer-aboutme {
-   margin: 50px;
 }
 
 footer span {
@@ -170,25 +202,19 @@ footer span {
    border-top: 1px solid rgb(66, 63, 63);
 }
 
-.lista-footer-ul li {
-   display: flex;
-   justify-content: center;
-}
 
 .titulo-h2 {
    color: rgb(52, 52, 52);
    text-align: center;
-   background-color: #dbe7ec;
    padding: 2rem;
-   
+      font-family: "Roboto", serif;
+      font-weight: 600;
+      font-size: 30px;
+      font-style: italic;
 }
 
 @media only screen and (max-width: 768px) {
 
-   .lista-footer-ul {
-      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr) );
-   }
- 
    .section-principal{
       font-size: 2rem;
       padding: 50% 25px;
@@ -196,21 +222,57 @@ footer span {
       background-size: cover;
    }
 
-   .nav ul li {
-      padding: 1rem;
-   }
-   .nav li a {
-      font-size: 1rem;
-   }
 
-   .lista-footer-ul {
-      margin-bottom: 1rem;
-   }
+   footer .top-footer {
+      grid-template-columns: repeat(1, 1fr);
+  }
 
-   .lista-footer-ul {
-      margin-bottom: 1rem;
-   }
-   img.pic {
+  .nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 3.125rem;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 1000;
+      margin: 0;
+  }
+
+  nav {
+     align-items: center;
+  }
+
+  .nav ul li {
+     padding: 1rem;
+     border-bottom: 1px solid #dad7d7;
+     text-align: center;
+  }
+
+  .material-symbols-outlined { 
+     display: flex;
+     flex-direction: column;
+  }
+
+li #contador {
+     display: flex;
+     flex-direction: column;
+}
+
+.nav ul li:nth-child(6) {
+  padding-right: 16px;
+}
+
+  .nav.open ul {
+      display: flex;
+  }
+
+  .hamburguesa {
+      display: block;
+  }  
+  
+  img.pic {
       width: 90%;
    }
    .seccion p {
@@ -219,49 +281,78 @@ footer span {
    }
 }
 
-@media only screen and (max-width: 1400px) {
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
-   }
-}
+ 
 
-@media only screen and (max-width: 500px) {
 
-   .section-principal {
+
+   @media only screen and (max-width: 768px) {
+
+       .section-principal {
       padding: 15dvh 5dvw;
       background-size: 100vh 100dvw;
    }
 
-   .section-nav {
-      grid-template-columns: none;
-      gap: 2rem
+   
+      footer .top-footer {
+          grid-template-columns: repeat(1, 1fr);
       }
    
-   nav {
-      height: 100%;
-      display: block;
+      .nav ul {
+          display: none;
+          flex-direction: column;
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          top: 3.125rem;
+          width: 100%;
+          left: 0;
+          text-align: center;
+          z-index: 1000;
+          margin: 0;
+      }
+   
+      nav {
+         align-items: center;
+      }
+   
+      .nav ul li {
+         padding: 1rem;
+         border-bottom: 1px solid #dad7d7;
+         text-align: center;
+      }
+   
+      .material-symbols-outlined { 
+         display: flex;
+         flex-direction: column;
+      }
+   
+    li #contador {
+         display: flex;
+         flex-direction: column;
+    }
+   
+    .nav ul li:nth-child(6) {
+      padding-right: 16px;
    }
-
-   .nav ul {
-      display: block;
-      margin: 0;
+   
+      .nav.open ul {
+          display: flex;
+      }
+   
+      .hamburguesa {
+          display: block;
+      }
    }
-
-   li.Nosotros {
-      border: 0;
-      background-color: #f5f3f3;
+   
+   @media only screen and (max-width: 675px) {
+      .section-nav {
+          grid-template-columns: none;
+          gap: 2rem;
+      }
    }
-
-   .nav ul li {
-      padding: 1rem;
-      border-bottom: 1px solid #dad7d7;
-      text-align: center;
+   
+   @media only screen and (max-width: 551px) {
+      .cards {
+          grid-template-columns: repeat(1, 1fr);
+      }
    }
-   .nav ul li a {
-      font-size: 1rem;
-   }
-
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
-   }
-}
+   

@@ -10,6 +10,23 @@ body {
    background-color: #f3f4f6;
    font-family: "Montserrat", serif;
    height: 100dvh;
+   overflow-x: hidden;
+}
+
+.roboto-regular {
+   font-family: "Roboto", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.hamburguesa {
+   display: none;
+   cursor: pointer;
+   z-index: 1000; 
+}
+
+.material-symbols-outlined {
+   transition: 0.3s;
 }
 
 nav {
@@ -19,6 +36,8 @@ nav {
    display: flex;
    border-top: 1px solid #dad7d7;
    justify-content: center;
+   z-index: 1000;
+   position: relative;
 }
 
 .nav ul .contador {
@@ -27,9 +46,8 @@ nav {
 
 #contador {
    border-radius: 50%;
-   padding-bottom: 50px;
    font-family: 'Roboto';
-   display: none;
+   font-size: small;
 }
 
 .nav ul li:nth-child(6) {
@@ -78,7 +96,6 @@ li.Productos a {
 .Productos a {
    color: black;
 } 
-
 
 .section-nav {
    background-color: #dbe7ec;
@@ -137,7 +154,6 @@ article div {
 }
 
 .cards article {
-   margin-left: 5px;
    border-radius: 5%;
 }
 
@@ -227,50 +243,29 @@ footer span {
 
 @media only screen and (max-width: 768px) {
 
+   .cards {
+       grid-template-columns: repeat(1, 1fr);
+   }
 
-   .nav ul li {
-      padding: 1rem;
-   }
-   .nav li a {
-      font-size: 1rem;
-   }
-   .section-nav {
-      font-size: 0.8rem;
-   }
-   
-   .section-nav span {
-      display: none;
-   }
-   .lista-footer-ul {
-      margin-bottom: 1rem;
-   }
-}
-
-@media only screen and (max-width: 1400px) {
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
-   }
-}
-
-@media only screen and (max-width: 500px) {
-   .section-nav {
-      grid-template-columns: none;
-      gap: 2rem
-      }
-   
-   nav {
-      height: 100%;
-      display: block;
+   footer .top-footer {
+       grid-template-columns: repeat(1, 1fr);
    }
 
    .nav ul {
-      display: block;
-      margin: 0;
+       display: none;
+       flex-direction: column;
+       background-color: rgb(255, 255, 255);
+       position: absolute;
+       top: 3.125rem;
+       width: 100%;
+       left: 0;
+       text-align: center;
+       z-index: 1000;
+       margin: 0;
    }
 
-   li.Productos {
-      border: 0;
-      background-color: #f5f3f3;
+   nav {
+      align-items: center;
    }
 
    .nav ul li {
@@ -278,11 +273,39 @@ footer span {
       border-bottom: 1px solid #dad7d7;
       text-align: center;
    }
-   .nav ul li a {
-      font-size: 1rem;
+
+   .material-symbols-outlined { 
+      display: flex;
+      flex-direction: column;
    }
 
-   .lista-footer-ul {
-      grid-template-columns: auto auto;
+ li #contador {
+      display: flex;
+      flex-direction: column;
+ }
+
+ .nav ul li:nth-child(6) {
+   padding-right: 16px;
+}
+
+   .nav.open ul {
+       display: flex;
+   }
+
+   .hamburguesa {
+       display: block;
+   }
+}
+
+@media only screen and (max-width: 675px) {
+   .section-nav {
+       grid-template-columns: none;
+       gap: 2rem;
+   }
+}
+
+@media only screen and (max-width: 551px) {
+   .cards {
+       grid-template-columns: repeat(1, 1fr);
    }
 }
